@@ -27,3 +27,13 @@ SELECT speaker_id, speaker_name, social_media_contacts
 FROM conf_star_schema_v3.dim_speaker ds
 ORDER BY speaker_id;
 
+/*[
+    {
+        "platform": "twitter",
+        "username_url": "@johnsmith"
+    },
+    {
+        "platform": "linkedin",
+        "username_url": "https://www.linkedin.com/in/johnsmith"
+    }
+]*/
