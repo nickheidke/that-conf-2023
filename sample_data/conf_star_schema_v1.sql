@@ -32,31 +32,34 @@ INSERT INTO conf_star_schema_v1.dim_speaker_social (speaker_social_id, social_me
 VALUES (1, 'Twitter', 'https://twitter.com/johnsmith', 1);
 
 INSERT INTO conf_star_schema_v1.dim_speaker_social (speaker_social_id, social_media_type, social_media_link, speaker_id)
-VALUES (2, 'LinkedIn', 'https://linkedin.com/in/johndoe', 2);
+VALUES (2, 'LinkedIn', 'https://linkedin.com/in/johnsmith', 1);
 
 INSERT INTO conf_star_schema_v1.dim_speaker_social (speaker_social_id, social_media_type, social_media_link, speaker_id)
-VALUES (3, 'Twitter', 'https://twitter.com/michaeljohnson', 3);
+VALUES (3, 'LinkedIn', 'https://linkedin.com/in/johndoe', 2);
 
 INSERT INTO conf_star_schema_v1.dim_speaker_social (speaker_social_id, social_media_type, social_media_link, speaker_id)
-VALUES (4, 'LinkedIn', 'https://linkedin.com/in/emilybrown', 4);
+VALUES (4, 'Twitter', 'https://twitter.com/michaeljohnson', 3);
 
 INSERT INTO conf_star_schema_v1.dim_speaker_social (speaker_social_id, social_media_type, social_media_link, speaker_id)
-VALUES (5, 'Twitter', 'https://twitter.com/daviddavis', 5);
+VALUES (5, 'LinkedIn', 'https://linkedin.com/in/emilybrown', 4);
 
 INSERT INTO conf_star_schema_v1.dim_speaker_social (speaker_social_id, social_media_type, social_media_link, speaker_id)
-VALUES (6, 'LinkedIn', 'https://linkedin.com/in/lauramiller', 6);
+VALUES (6, 'Twitter', 'https://twitter.com/daviddavis', 5);
 
 INSERT INTO conf_star_schema_v1.dim_speaker_social (speaker_social_id, social_media_type, social_media_link, speaker_id)
-VALUES (7, 'Twitter', 'https://twitter.com/andrewwilson', 7);
+VALUES (7, 'LinkedIn', 'https://linkedin.com/in/lauramiller', 6);
 
 INSERT INTO conf_star_schema_v1.dim_speaker_social (speaker_social_id, social_media_type, social_media_link, speaker_id)
-VALUES (8, 'LinkedIn', 'https://linkedin.com/in/olivialee', 8);
+VALUES (8, 'Twitter', 'https://twitter.com/andrewwilson', 7);
 
 INSERT INTO conf_star_schema_v1.dim_speaker_social (speaker_social_id, social_media_type, social_media_link, speaker_id)
-VALUES (9, 'Twitter', 'https://twitter.com/danielclark', 9);
+VALUES (9, 'LinkedIn', 'https://linkedin.com/in/olivialee', 8);
 
 INSERT INTO conf_star_schema_v1.dim_speaker_social (speaker_social_id, social_media_type, social_media_link, speaker_id)
-VALUES (10, 'LinkedIn', 'https://linkedin.com/in/sophiawang', 10);
+VALUES (10, 'Twitter', 'https://twitter.com/danielclark', 9);
+
+INSERT INTO conf_star_schema_v1.dim_speaker_social (speaker_social_id, social_media_type, social_media_link, speaker_id)
+VALUES (11, 'LinkedIn', 'https://linkedin.com/in/sophiawang', 10);
 
 
 INSERT INTO conf_star_schema_v1.dim_session (session_id, session_name, session_date, session_timeslot)

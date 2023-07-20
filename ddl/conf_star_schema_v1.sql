@@ -27,7 +27,7 @@ create table conf_star_schema_v1.dim_participant
     participant_first_name varchar(256),
     participant_last_name  varchar(256),
     participant_email      varchar(256)
-);
+) DISTSTYLE EVEN;
 
 DROP TABLE IF EXISTS conf_star_schema_v1.dim_session;
 
@@ -37,7 +37,7 @@ create table conf_star_schema_v1.dim_session
     session_name     varchar(256),
     session_date     date encode az64,
     session_timeslot varchar(256)
-);
+) DISTSTYLE EVEN;
 
 DROP TABLE IF EXISTS conf_star_schema_v1.fact_session_attendance;
 
