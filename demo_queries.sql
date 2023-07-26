@@ -23,11 +23,16 @@ ON fsa.session_id = d.session_id
 WHERE speaker_name = 'John Smith';
 
 --Query with our SUPER datatype, no set distribution styles
-SELECT speaker_id, speaker_name, social_media_contacts
+EXPLAIN
+SELECT ds.speaker_id, speaker_name, social_media_contacts
 FROM conf_star_schema_v3.dim_speaker ds
+JOIN conf_star_schema_v3.fact_session_attendance fsa
+ON ds.speaker_id = fsa.speaker_id
+JOIN conf_star_schema_v3.dim_session d
+ON fsa.session_id = d.session_id
 ORDER BY speaker_id;
 
-/*[
+[
     {
         "platform": "twitter",
         "username_url": "@johnsmith"
@@ -36,4 +41,4 @@ ORDER BY speaker_id;
         "platform": "linkedin",
         "username_url": "https://www.linkedin.com/in/johnsmith"
     }
-]*/
+]
